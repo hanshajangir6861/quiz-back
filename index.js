@@ -23,7 +23,7 @@ import connect from './connection.js'
 import DataRouter from './DataRouter.js';
 
 const app = express()
-app.use(cors())
+app.use(cors({origin: "https://quiz-front-eb8l.onrender.com"}))
 app.use(express.json())
 app.use("/data" , DataRouter)
 
